@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <h1> Displaying dates in different formats</h1>
+        <script type="text/javascript">
+        function dateformats() {
+            var dateformat=new Date();
+            var date=dateformat.getDate();
+            var month=dateformat.getMonth();
+            var year=dateformat.getFullYear();
+            if (date<10)
+            {
+                date='0'+date;
+            }
+            if (month<10)
+            {
+                month='0'+month;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        dateformat=month+'-'+date+'-'+year;
+        console.log(dateformat)
+        dateformat=month+'/'+date+'/'+year;
+        documnet.write(dateformat)
+        dateformat=date+'-'+month+'-'+year;
+        documnet.write(dateformat)
+        dateformat=date+'/'+month+'/'+year;
+        documnet.write(dateformat)
+    </body>
+</html>

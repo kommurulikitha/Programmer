@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>displaying date</title>
+        <script type="text/javascript">
+        function displayDate() {
+            document.getElementById("showDate").innerHTML=new Date().toLocaleDateString();
+            var d=new Date.toLocaleDateString();
+            date=d.getDate()
+            month=d.getMonth();
+            year=d.getFullYear();
+            innerHTML=date+'-'+month+'-'+year
+        }
+        </script>   
+    </head>
+    <body>
+        <button onclick="displayDate()">Show Date</button>
+        <p id="showDate"></p>
+    </body>
+</html>
+
