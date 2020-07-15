@@ -1,0 +1,80 @@
+There are six basic data types in JavaScript which can be classified  into three main categories:
+    1.Primitive data type
+        a.String
+        b.Number
+        c.Boolean
+    2.Special data types 
+        a.Undefined and 
+        b.Null 
+    3.Composite data type  
+        a.Object
+        b.Array
+        c.Function
+        
+Primitive data types can hold only one value at a time, whereas composite data types can hold collection or a group of values. 
+
+1)Primitive:
+    a.String:
+        This consists of sequence or a group of  characters.These can be defined in single or double quotes.
+            eg:
+                var a="Hello Programmer"
+                var b='Java script'
+                var c="hi! this is 'great' work"
+
+    b.Number:        
+        The number data type is used to represent positive or negative numbers with or without decimal place, or numbers written using exponential notation.
+            eg:
+                var a=3.534e+3
+                var b=89
+                var c=54.56
+        If a non-syntactical input or command is given then NaN wii be returned.
+            eg:
+                var a=23
+                var b="and"
+                c=a+b
+                <!--o/p will be gives NaN -->
+
+    c.Boolean:
+        This only return either true or false.in this relational operators can be used.
+            eg:
+                var a=5,b=7
+                console.log(a>b) 
+                <!-- output will be false -->
+
+2)Special:
+    a.Undefined:
+        The undefined data type can only have one value-the special value undefined. If a variable has been declared, but has not been assigned a value, has the value undefined.
+            eg:
+                var a = "Hello World!";
+                var b;
+                console.log(b); <!--output will be undefined  -->
+
+    b.Null:
+    A null value means that there is no value. It is not equivalent to an empty string ("") or 0, it is simply nothing.A variable can be explicitly emptied of its current contents
+    by assigning it the null value
+        eg:
+            var a = null;
+            alert(a); // Output: null
+            
+            var b = "Hello World!"
+            alert(b); // Output: Hello World!
+
+3)Composite:
+    a.Object:
+        This has a special properties.It always has key-value pair in it.The key should be always a string and key can be any datatype.
+            eg:
+                var student={"name":"JavaScript","age":34};
+    b.Array:
+        This can store multiple or a group of values in single variable.The elements can be accessed through indexes.The base position starts from zero.
+            eg:
+                var games=["templerun","subway surf","free fire"];
+                alert(games[1]); // Output: subway surf
+    c.Function:
+         The function has a block of code in curly brackets.These ae also objects.
+            eg:
+                var display=function() {
+                    return "Hello World";
+                }
+                alert(display());
+                <!-- Output: Hello World -->
+                

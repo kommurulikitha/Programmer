@@ -1,0 +1,36 @@
+There are mainly three keywords used to declare a variable.They are:
+    1.var
+    2.let
+    3.const
+
+var:
+    The variables declared with varfv has global scope.The Global variables can be accessed from anywhere in a JavaScript program.
+    Variables declared with the var keyword cannot have Block Scope.Variables declared inside a block {} can be accessed from outside the block.
+        eg:
+            <!DOCTYPE html>
+            <html>
+            <body>
+
+            <h2>JavaScript Scope</h2>
+
+            <p>A GLOBAL variable can be accessed from any script or function.</p>
+
+            <p id="demo"></p>
+
+            <script>
+            var fruitName = "banana";
+            myFunction();
+
+            function myFunction() {
+            document.getElementById("demo").innerHTML = "I can display " + fruitName;
+            }
+            </script>
+
+            </body>
+            </html>
+            <!-- Here fruit can be accessed from anywhere -->
+
+Note:
+    The same variable can't be used for declaring both var and let.
+
+

@@ -1,0 +1,62 @@
+const:
+    These can be declared with prefix const.In the name itself says that the value is constant.So we can't change the value of const but we can mutate the const 
+    like appending the extra element into it.It does not define a constant value. It defines a constant reference to a value.
+        eg1:
+            <!DOCTYPE html>
+            <html>
+            <body>
+            
+            <h2>JavaScript const</h2>
+            
+            <p>Declaring a constant object does NOT make the objects properties unchangeable:</p>
+            
+            <p id="demo"></p>
+            
+            <script>
+            // Create an object:s
+            const car = {type:"Fiat", model:"500", color:"white"};
+            
+            // Change a property:
+            car.color = "red";
+            
+            // Add a property:
+            car.owner = "Johnson";
+            
+            // Display the property:
+            document.getElementById("demo").innerHTML = "Car owner is " + car.owner; 
+            </script>
+            
+            </body>
+            </html>
+                  
+        eg2:
+            <!DOCTYPE html>
+            <html>
+            <body>
+
+            <h2>JavaScript const</h2>
+
+            <p>Declaring a constant array does NOT make the elements unchangeble:</p>
+
+            <p id="demo"></p>
+
+            <script>
+            const PI=3.1415
+            // Create an Array:
+            const cars = ["Audi", "Volvo", "BMW"];
+
+            // Change an element:
+            cars[0] = "Toyota";
+
+            // This appends or adds an element:
+            cars.push("Tesla");
+
+            // Display the Array:
+            alert(cars);
+            </script>
+
+            </body>
+            </html>
+
+Note:
+        The variable must be assigned with the value at time of declaration.
