@@ -18,10 +18,3 @@ function changeColor(){
     asd.style.color='blue';
 }
 changeColor();
-
-/* document.write("<p style='background-color: #ffb6c1;
-                        text-align:center'>\"");
-        document.write(quotes[i] + "\"");
-        document.write("<em>- " + sources[i] + "</em>");
-        document.write("</p>");
-    */
